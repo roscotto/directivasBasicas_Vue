@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>01 Ejercicio Mario</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="scripts/vue.js"></script>
+
+</head>
+<body>
+    <div class="contenedor" v-cloak>
+        <main>
+        <h1>{{title}}</h1>
+        <img v-bind:src ="imagen_mario" v-bind:alt="alt"/>
+        <div v-html="h2_mario">
+            
+        </div>
+        <p>¡Araña y trepa a través de docenas de coloridos niveles! Mario y sus amigos pueden utilizar una variedad de mejoras como la supercampana, que otorga habilidades felinas como trepar y arañar. Forma un equipo con hasta tres jugadores más en el modo local o en línea para completar el objetivo y ver quién obtiene el puntaje más alto.</p>
+
+        <h2>{{h2_bowser}}</h2>
+        <p>¡El estilo de juego de libre exploración de Super Mario regresa en esta nueva aventura en la que Bowser es gigantesco y ha perdido el control! Viaja hacia el Mar de los Zarpazos y sus islas, completa objetivos para conseguir soles felinos y únete a Bowser Jr. para ayudarle a devolver al maloso de su papá a su tamaño normal. Pero no pierdas de vista los ataques de Bowser por todas las islas.</p>
+        </main>
+
+
+        <label>
+            <input type="checkbox" id="check_01" value="{{datazo}}" v-model="datazo"> Amo a Mario
+        </label>
+        <br>
+        <img src="img/35_aniversario.png" alt="imagen mario 35 aniversario" v-bind:class=" datazo ? 'mostrar' : 'ocultar' ">
+    </div>
+    <script src="scripts/app.js"></script>
+</body>
+</html>

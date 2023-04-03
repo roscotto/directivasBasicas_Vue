@@ -1,0 +1,15 @@
+
+[v-cloak] { display: none;}
+
+.contenedor {
+    
+}
+
+
+.mostrar {
+    display: block;
+}
+
+.ocultar {
+    display: none;
+}
